@@ -1,0 +1,315 @@
+/* =====================================================
+   ROOT & RESET HELPERS
+===================================================== */
+
+:root {
+  --bg-main: #020617;
+  --bg-deep: #020617;
+  --bg-card: rgba(255,255,255,0.035);
+  --bg-glass: rgba(255,255,255,0.06);
+  --line: rgba(255,255,255,0.1);
+
+  --accent: #facc15;
+  --accent-soft: rgba(250,204,21,0.15);
+
+  --text-main: #e5e7eb;
+  --text-sub: #9ca3af;
+  --text-dim: #6b7280;
+}
+
+/* =====================================================
+   BASE
+===================================================== */
+
+body {
+  font-family: 'Pretendard','Noto Sans KR',system-ui,sans-serif;
+  background:
+    url("../img/noise.png"),
+    radial-gradient(1200px at 10% -10%, #0f172a 0%, transparent 45%),
+    radial-gradient(900px at 90% 10%, #020617 0%, transparent 45%),
+    var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.85;
+  letter-spacing: -0.2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  position: relative;
+  padding: 190px 24px 170px;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/hero.webp") center/cover no-repeat;
+  opacity: 0.14;
+  z-index: -1;
+}
+
+.hero-inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--bg-glass);
+  border: 1px solid var(--line);
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 26px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 26px;
+  background: linear-gradient(90deg, #ffffff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 20px;
+  color: var(--text-sub);
+}
+
+/* =====================================================
+   INFO BAR
+===================================================== */
+
+.info-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba(2,6,23,0.65);
+  border-bottom: 1px solid var(--line);
+}
+
+.info-bar ul {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.info-bar strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 140px 24px;
+}
+
+/* =====================================================
+   INDEX SECTION
+===================================================== */
+
+.index-section {
+  margin-bottom: 160px;
+}
+
+.index-header {
+  margin-bottom: 50px;
+}
+
+.index-header h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.index-header p {
+  color: var(--text-sub);
+  font-size: 17px;
+}
+
+.index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  gap: 28px;
+}
+
+.index-card {
+  position: relative;
+  padding: 36px 34px;
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.015)
+  );
+  border: 1px solid var(--line);
+  transition: transform .4s, box-shadow .4s, border-color .4s;
+}
+
+.index-card span {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.index-card h3 {
+  font-size: 22px;
+  margin: 10px 0 8px;
+}
+
+.index-card p {
+  font-size: 15px;
+  color: var(--text-sub);
+}
+
+.index-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+  border-color: var(--accent-soft);
+}
+
+/* =====================================================
+   CONTENT SECTIONS
+===================================================== */
+
+.content-section {
+  margin-bottom: 160px;
+}
+
+.content-section.highlight {
+  position: relative;
+}
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.section-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.section-head h2 {
+  font-size: 36px;
+}
+
+.content-box {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 60px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(6px);
+}
+
+.content-box h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.content-box p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.content-box a {
+  color: #38bdf8;
+  font-weight: 600;
+  position: relative;
+}
+
+.content-box a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+/* =====================================================
+   COLUMN LAYOUT
+===================================================== */
+
+.content-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
+  gap: 36px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  border-top: 1px solid var(--line);
+  background: rgba(2,6,23,0.7);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.footer-inner span {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .container {
+    padding: 100px 20px;
+  }
+
+  .content-box {
+    padding: 40px;
+  }
+
+  .section-head h2 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>소액결제현금화·신용카드현금화 구조 분석 리포트</title>
+  <meta name="description" content="소액결제현금화와 신용카드현금화의 구조, 차이점, 리스크를 정보 제공 목적에서 심층 분석한 디지털 결제 리서치 페이지입니다.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-badge">DIGITAL PAYMENT RESEARCH</span>
+    <h1>
+      소액결제현금화 · 신용카드현금화<br>
+      구조 분석 리포트
+    </h1>
+    <p>
+      디지털 결제 시스템 기반 현금화 방식에 대한<br>
+      정보 제공 목적의 심층 구조 분석
+    </p>
+  </div>
+</header>
+
+<!-- ================= STICKY INFO BAR ================= -->
+<div class="info-bar">
+  <ul>
+    <li><strong>분류</strong> 디지털 결제 구조</li>
+    <li><strong>형태</strong> 리서치 · 가이드</li>
+    <li><strong>목적</strong> 정보 제공</li>
+    <li><strong>업데이트</strong> 2025</li>
+  </ul>
+</div>
+
+<main class="container">
+
+<!-- ================= INDEX ================= -->
+<section class="index-section">
+  <div class="index-header">
+    <h2>Index</h2>
+    <p>본 리포트에서 다루는 주요 내용입니다.</p>
+  </div>
+
+  <div class="index-grid">
+    <a href="#sec1" class="index-card">
+      <span>01</span>
+      <h3>소액결제현금화의 개념</h3>
+      <p>기본 구조와 정의</p>
+    </a>
+
+    <a href="#sec2" class="index-card">
+      <span>02</span>
+      <h3>소액결제현금화 구조</h3>
+      <p>절차 · 주의사항</p>
+    </a>
+
+    <a href="#sec3" class="index-card">
+      <span>03</span>
+      <h3>신용카드현금화의 개념</h3>
+      <p>결제 승인 기반 구조</p>
+    </a>
+
+    <a href="#sec4" class="index-card">
+      <span>04</span>
+      <h3>신용카드현금화 방식</h3>
+      <p>구조별 차이 분석</p>
+    </a>
+
+    <a href="#sec5" class="index-card">
+      <span>05</span>
+      <h3>두 방식의 비교</h3>
+      <p>차이 · 리스크</p>
+    </a>
+  </div>
+</section>
+
+<!-- ================= SECTION 1 ================= -->
+<section id="sec1" class="content-section">
+  <div class="section-head">
+    <span class="section-number">01</span>
+    <h2>소액결제현금화의 개념</h2>
+  </div>
+
+  <div class="content-box">
+    <p>
+      소액결제현금화는 이동통신사의 결제 한도를 활용하여
+      디지털 콘텐츠 또는 서비스 결제를 진행한 뒤,
+      해당 결제 금액을 현금성 자산 흐름으로 전환하는 구조를 의미합니다.
+    </p>
+    <p>
+      이 방식은 전통적인 금융 상품이나 대출과는 다른 결제 시스템 기반 구조를 가지며,
+      결제 승인 → 콘텐츠 유통 → 정산이라는 단계를 거쳐 이루어집니다.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SECTION 2 ================= -->
+<section id="sec2" class="content-section highlight">
+  <div class="section-head">
+    <span class="section-number">02</span>
+    <h2>소액결제현금화 구조와 주의사항</h2>
+  </div>
+
+  <div class="content-columns">
+    <div class="content-box">
+      <h3>구조적 특징</h3>
+      <p>
+        소액결제현금화는 통신사 정책, 결제 대행 구조,
+        콘텐츠 유형에 따라 처리 방식이 달라집니다.
+        특히 수수료 구조와 정산 시점은 이용자 입장에서
+        반드시 확인해야 할 핵심 요소입니다.
+      </p>
+    </div>
+
+    <div class="content-box">
+      <h3>정보 참고 자료</h3>
+      <p>
+        실제 이용 사례와 세부적인 주의사항은
+        <a href="https://biasedmemoirs.com/%EC%86%8C%EC%95%A1%EA%B2%B0%EC%A0%9C-%ED%98%84%EA%B8%88%ED%99%94%EC%9D%98-%EC%A3%BC%EC%9A%94-%EB%B0%A9%EB%B2%95%EA%B3%BC-3%EA%B0%80%EC%A7%80-%EC%A3%BC%EC%9D%98%EC%82%AC%ED%95%AD/" target="_blank" rel="noopener">소액결제현금화</a>
+        관련 정리 자료를 참고하면 이해에 도움이 됩니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 3 ================= -->
+<section id="sec3" class="content-section">
+  <div class="section-head">
+    <span class="section-number">03</span>
+    <h2>신용카드현금화의 개념</h2>
+  </div>
+
+  <div class="content-box">
+    <p>
+      신용카드현금화는 신용카드 결제 한도를 활용하여
+      특정 상품 또는 서비스를 구매한 뒤,
+      해당 거래 구조를 통해 현금 흐름을 확보하는 방식을 의미합니다.
+    </p>
+    <p>
+      카드사 승인 정책과 거래 방식에 따라
+      안정성과 리스크가 크게 달라질 수 있습니다.
+    </p>
+  </div>
+</section>
+
+<!-- ================= SECTION 4 ================= -->
+<section id="sec4" class="content-section highlight">
+  <div class="section-head">
+    <span class="section-number">04</span>
+    <h2>신용카드현금화 방식 비교</h2>
+  </div>
+
+  <div class="content-columns">
+    <div class="content-box">
+      <h3>방식 구분</h3>
+      <p>
+        신용카드현금화는 실물 상품 기반 방식과
+        디지털 거래 기반 방식으로 구분되며,
+        각 방식은 수수료, 처리 속도, 구조적 안정성에서 차이를 보입니다.
+      </p>
+    </div>
+
+    <div class="content-box">
+      <h3>구조 참고</h3>
+      <p>
+        구조적 차이와 기본 작동 방식은
+        <a href="https://gaonwallet.com/%EC%8B%A0%EC%9A%A9%EC%B9%B4%EB%93%9C%ED%98%84%EA%B8%88%ED%99%94/" target="_blank" rel="noopener">신용카드현금화</a>
+        안내 자료를 통해 확인할 수 있습니다.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION 5 ================= -->
+<section id="sec5" class="content-section">
+  <div class="section-head">
+    <span class="section-number">05</span>
+    <h2>소액결제현금화와 신용카드현금화의 차이</h2>
+  </div>
+
+  <div class="content-box">
+    <p>
+      소액결제현금화는 통신 결제 한도를,
+      신용카드현금화는 카드 결제 한도를 기반으로 한다는 점에서
+      출발 구조부터 차이가 존재합니다.
+    </p>
+    <p>
+      두 방식 모두 단기 유동성 확보 수단으로 활용될 수 있으나,
+      반복 사용 시 비용 부담과 신용도 영향 가능성을
+      반드시 고려해야 합니다.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© Digital Payment Structure Research Archive</p>
+    <span>Information Purpose Only</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
